@@ -128,6 +128,14 @@ Title: Creating an HTML5 enhanced responsive-ready contact form, with custom jav
 Tutorial on: http://www.onextrapixel.com
 Author: http://www.toddmotto.com
 */
+.results { font-size: 1.2em;
+			color:blue;
+			margin:1em;}
+
+.nestoriaLink a { font-size: 1.5em;
+				 margin:1em;}	
+.ourPrice { font-size: 2em;
+			color:green;}
 
 * {
 	margin:0;
