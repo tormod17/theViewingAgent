@@ -1,48 +1,43 @@
-$(document).ready(function() {
+
+(document).ready(function() {
    
-var AveragePrice;
-var totalPrice;
-var averageComm;
-var totalComm;
-var bedrooms;
-var listings;
+
 
     $('.lettingsProperty').submit( function(event){
         $('.results').html('');
         event.preventDefault();
 
           var location = $(this).find("input[name='location']").val();
-          var bedroom_max= $(this).find("input[name='no_bedrooms']").val();
-          getListings(location, bedroom_max);
-          
+          console.log(location);
+          getListings(location);
+       
     });
-});      
-    
-function getListings (location,bedroom_max) { 
+
+  
+        
+    function getListings (location) { 
             
             var request = {  
 
               country: "uk",  
               language : "en",  
               listing_type : "rent", 
-              location : location,
-              num_res: "1",  
+              location : location,  
+              num_res: "5",  
               offset : 0,  
               output : "json_xs",  
               page : 1,  
               pretty : "1",  
-              product_type : "realestate", 
+              product_type : "realestate",  
               property_type : "property",  
               size_type : "gross",  
               size_unit : "m2",  
               sort : "nestoria_rank",  
               action:"search_listings",
               encoding: "json",
-              bedroom_max: bedroom_max,
-              bedroom_min: bedroom_max,
-              number_of_results:50,
-
-            } 
+            }
+        
+    
 
             var response = $.ajax({
             
@@ -52,94 +47,32 @@ function getListings (location,bedroom_max) {
             type: "GET",
             
             })
-           
 
-            .done(function(response){
-             var nestoriaLink= response.response.link_to_url;
-                 console.log(nestoriaLink)
-    
-                var listings = response.response.listings;
-                var No_of_listings = listings.length;
-                console.log(listings);
-                        
-                        var totalPrice=0;
-                        var totalComm=0;
-                        var agentComm=0;
-                        var averagePrice=0;
-                        var averageComm=0;
+        .done(function(response){
 
-                  $.each(listings, function(i, item) {
-                      
-                        var listingPrice = item.price;
-                            totalPrice+=listingPrice;
-                            agentComm = parseInt((listingPrice * 52) * 0.07);
-                            totalComm += agentComm;
-                            averageComm = parseInt(totalComm / No_of_listings);
-                            averagePrice =parseInt(totalPrice /No_of_listings);
-                        
+            console.log(response);
+            console.log(response.response.listings);
+             
+            $.each(response.response.listings, function(i, item) {
+            var listingPrice = item.price;
+            var bedrooms = item.bedroom_number;
+            var hsAgentPrice = parseInt((listingPrice * 52) * 0.07);
 
-                  })     
-
-            $('.nestoriaLink').append('<p>' + '<a href =' + nestoriaLink+ '>' +'Click here to see comparable properties</a></p>');
-            $('.results').append('<p>  Number of bedrooms:' + ' ' + bedroom_max +' '+ 'Average weekley rent: £' + averagePrice +' ' + 'Average agent commisson :' +' ' + '£'+ averageComm  +' </p>');
-            $('.ourPrice').append('<p> The viewing agent will cost you £400 </p>');
-                  console.log(parseInt(averagePrice));
-                  console.log(parseInt(averageComm));        
-            })
+            console.log(item.price);
+          
             
-            .fail(function(jqXHR, error, errorThrown){
+            $('.results').append("<p>" + bedrooms + "  bedrooms " + " / " +  listingPrice + "GBP per week  /  High St Agent Comm:" + hsAgentPrice + " GBP </p>");
+            console.log(location);
+            });
+        })
+
+        .fail(function(jqXHR, error, errorThrown){
             var errorElem = showError(error);
             $('.search-results').append(errorElem);
-             });
-
-};        
-
- 
-
-
-            
-     /*  
-
-     
-
+        });
+    
     }
-
-console.log(response);
-
+            
 
 
 });  
-
-   */
-
-  /*       
-                   
-                   
-              
-                   
-                       
-
-                
-                console.log(item.bedroom_number)
-                console.log(averageComm);                
-
-                return AveragePrice;
-                return averageComm;
-
-
-                    function getAvPrice(totalPrice,No_of_results) { 
-                       AveragePrice= totalPrice / No_of_listings;
-
-                       return AveragePrice;
-                    }
-
-
-               */
- /*   console.log(bedroom_max);
-          console.log(location);
-          getListings(location,bedroom_max);
-          
-          $('.results').append("<p>" + bedroom_max + "  bedrooms " + " / " +  AveragePrice + "GBP per week  /  High St Agent Comm:" + averageComm + " GBP </p>");
-          console.log(location);   
-      */
-         
