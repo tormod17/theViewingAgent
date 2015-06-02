@@ -81,7 +81,8 @@ function getListings (location,bedroom_max) {
                   })     
 
             $('.nestoriaLink').append('<p>' + '<a href =' + nestoriaLink+ '>' +'Click here to see comparable properties</a></p>');
-            $('.results').append('<p>  Number of bedrooms:' + ' ' + bedroom_max +' '+ 'Average weekley rent: £' + averagePrice +' ' + 'Average agent commisson :' +' ' + '£'+ averageComm  +' </p>');
+            $('.results').append('<p>  Number of bedrooms:' + ' ' + bedroom_max +' '+ 'Average weekley rent: £' + averagePrice );
+            $('.hsAgentComm').append('<p> Average agent commisson :' +' ' + '£'+ averageComm  +' </p>');
             $('.ourPrice').append('<p> The viewing agent will cost you £400 </p>');
                   console.log(parseInt(averagePrice));
                   console.log(parseInt(averageComm));        
@@ -91,62 +92,11 @@ function getListings (location,bedroom_max) {
             var errorElem = showError(error);
             $('.search-results').append(errorElem);
              });
-<<<<<<< HEAD
+
 
 };        
 
  
 
 
-            
-     /*  
-
-     
-
-    }
-
-console.log(response);
-
-
-
-});  
-
-   */
-
-  /*       
-                   
-                   
-              
-                   
-                       
-
-                
-                console.log(item.bedroom_number)
-                console.log(averageComm);                
-
-                return AveragePrice;
-                return averageComm;
-
-
-                    function getAvPrice(totalPrice,No_of_results) { 
-                       AveragePrice= totalPrice / No_of_listings;
-
-                       return AveragePrice;
-                    }
-
-
-               */
- /*   console.log(bedroom_max);
-          console.log(location);
-          getListings(location,bedroom_max);
-          
-          $('.results').append("<p>" + bedroom_max + "  bedrooms " + " / " +  AveragePrice + "GBP per week  /  High St Agent Comm:" + averageComm + " GBP </p>");
-          console.log(location);   
-      */
-         
-=======
-
-};        
-
  
->>>>>>> master
