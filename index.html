@@ -5,54 +5,95 @@
 	<meta charset="utf-8">
 	<meta encoding= "UTF-8">
 	<title>The Viewing Agent</title>
-	<link type="text/css" rel="stylesheet" href="css/main.css"></link>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"></link>
+	
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"></link>
+	<link type="text/css" rel="stylesheet" href="css/main.css"></link>
 	<script src="js/app.js"></script>
 </head>
 <body>
 <header>
-	<div id='nav-wrapper'>
-		<h1><a href="#topWrapper">THE VIEWING AGENT</a></h1>
-			<nav>
-				<ul class='navBar'>
-					  <li><a href="#howItWorks">HOW IT WORKS</a></li>
-		    		  <li><a href="#aboutUs">ABOUT US</a></li>
-		      		  <li><a href="#comparison">WHY US</a></li>
-		      		  <li><a href="#calculator">LETS DO THE MATH</a></li>
-		      		  <li><a href="#contact-form">CONTACT</a></li>
-				</ul>
+	<div class="theViewingAgent">
+			<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+				<div class="containter-fluid">
+					<div class="navbar-header">
+						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							
+								<span class="sr-only">Toggle navigation</span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				        </button>
+						<a class="navbar-brand" href="#topWrapper">THE VIEWING AGENT</a>
+					</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+					        <ul class="nav navbar-nav navbar-right">
+								  <li><a href="#howItWorks"> HOW IT WORKS </a></li>
+					    		  <li><a href="#aboutUs"> <span class='blue'>ABOUT US</span></a></li>
+					      		  <li><a href="#comparison">WHY US</a></li>
+					      		  <li><a href="#calculator"><span class="blue">LETS DO THE MATH </span></a></li>
+					      		  <li><a href="#contact-form">CONTACT</a></li>
+							</ul>
+					</div>
+				</div>	
 			</nav>
 	</div>
 	
 </header>
 <section>
-	<div id='topWrapper'>
-		<div id='introText'>	
-			<h4>Sell online, view with a professional agent</h4>
-			<p>Need someone to do your viewings
-			First viewing free
-			£15 a viewng
-			Finders Fee £150 , lets keep motivated!</p>
-			<button class='bookNow'><a href="#contact-form">Book a Viewing</a></button>
+	<div id='topWrapper' class='jumbotron'>
+		<div class="container">
+			<div id='introText'>	
+				<h4>Sell online, view with a <span class='blue'>professional agent</span></h4>
+				<p>Need someone to do your viewings
+				First viewing free
+				£15 a viewng
+				Finders Fee £150 , lets keep motivated!</p>
+				<button class='bookNow blue' ><a href="#contact-form">Book a Viewing</a></button>
+			</div>
 		</div>
 	</div>
-	<br>
-	
-	<div id='howItWorks'>
-		<br>
-		<h2>HOW IT WORKS</h2>
-			<ol>
-				<li>Choose an online agent (easyProperty, Tepilo, eMove)</li>
-				<li>Book the viewing agent at £15 for 20 mins </li>
-				<li>Send me the Keys by post or arrange a pickup</li>
-				<li>Send viewing instructions or arrange tenant enquiry management with the vieiwng agent</li>
-				<li>Feedback within 12 hours</li>
-				<li>Purchase AST and inventory online and  register ddeposit with DPS </li>
-				<li>Tenant signs AST - pay the viewing agent £150 finders fee</li>
-			</ol>
-			<button class='bookNow'><a href="#contact-form">Book a Viewing</a></button>
-		
+	 		
+   	<div id='howItWorks' class="fluid-container"> 
+			<h2>HOW IT WORKS</h2>
+
+			<div class="row">
+				<div class="col-md-3 col-lg-4 onlineAgents">
+					<div class='thumbnail'>
+					
+						<h1>1.Choose an online agent </h1>
+						<img src="images/easyProperty.png">
+						<img src="images/tepilo.jpg">
+						<img src="images/emoov_logo.gif">
+						<button class='bookNow'><a href="#contact-form">Learn More</a></button>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-4 viewingAgent">
+					<div class='thumbnail'>
+						<h1>2.Book the Viewing Agent</h1>
+						<img src="images/Bond.jpg" class="img-circle" alt="Circular Image">
+					
+						<button class='bookNow'><a href="#contact-form">Learn More</a></button>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-4 arrangeAccess">
+					<div class='thumbnail'>
+							<h1>3.Arrange access and wait for your offer</h1>
+							<img src="images/Key.png" img>
+
+						<button class='bookNow'><a href="#contact-form">Learn More</a></button>
+					</div>	
+				</div>
+			</div>
+			
 	</div>
 		<div id='aboutUs'>
 			<h2>ABOUT US</h2>
@@ -61,39 +102,45 @@
 		</div>	
 	<div id='comparison'>
 		<h2> WHY US</h2>
-		  <table>
-		  	  <tr>
-		  	  	<td><h3>HIGHT STREET  vs </h3></td>
-		  	  	<td><h3>ONLINE  vs</h3></td>
-		  	  	<td><h3>VIEWING AGENT</h3></td>
-		  	  </tr>
-			  <tr>
-			    <td>
-				<ul class='pros'>
-					<li>hosted viewings</li>
-					<li>local expert knowledge</li>
-					<li>access to registered buyers</li>
-				</ul>
-				<ul  class='cons'>
-					<li>Expensive Commission</li>
-					<li>High tenant admin fees</li>
-					<li>Pressurised sales staff</li>
-					<li>limited viewing times</li>
-				</ul> </td>
-			    <td>
-				<ul class='pros'>
-					<li>low cost , massive savings</li>
-					<li>No interferring agent</li>
-					<li>pick and choose services</li>
-				</ul>
-				<ul class='cons'>
-					<li>No hosted viewings</li>
-					<li>No local knowledge</li>
-					<li>No registered tenant database</li>
-					
-				</ul>
-				</td>
-		    	<td>
+			<div class="row">
+				<div class="col-md-4">
+					<div class='thumbnail'>
+						<h3>HIGHT STREET  </h3>
+							<ul class='pros'>
+									<li>hosted viewings</li>
+									<li>local expert knowledge</li>
+									<li>access to registered buyers</li>
+							</ul>
+							<ul  class='cons'>
+									<li>Expensive Commission</li>
+									<li>High tenant admin fees</li>
+									<li>Pressurised sales staff</li>
+									<li>limited viewing times</li>
+							</ul>
+					</div>
+				</div>
+			
+
+				<div class="col-md-4 ">
+					<div class='thumbnail'>
+						<h3>ONLINE </h3>
+							<ul class='pros'>
+								<li>low cost , massive savings</li>
+								<li>No interferring agent</li>
+								<li>pick and choose services</li>
+							</ul>
+							<ul class='cons'>
+								<li>No hosted viewings</li>
+								<li>No local knowledge</li>
+								<li>No registered tenant database</li>
+							</ul>
+					</div>		
+				</div>
+				
+
+				<div class="col-md-4">
+					<div class='thumbnail'>
+						<h3>VIEWING AGENT</h3>
 						<ul class='pros'>
 							<li>low cost , massive savings</li>
 							<li>hosted viewings</li>
@@ -103,28 +150,21 @@
 							<li></li>
 							<li></li>
 						</ul>
-				</td>
-			  </tr>
-		</table>
-			<div id='col1'>
-				
-			</div>
-			<div id='col2'>
-				
-			</div>
-			<div id='col3'>
-				
-			</div>
-			<br></br>
+					</div>
+				</div>
+			</div>	
+			
 		<button class='bookNow'><a href="#contact-form">Book a Viewing</a></button>
 	</div>
 	
 	<div id='calculator'>
 		<h2>LETS DO THE MATH</h2>
 			<form class="lettingsProperty" onsubmit="return false;">
-				<input type="text" placeholder="location" name="location" size="30"  required>
-				<input type="text" placeholder="no_bedrooms" name="no_bedrooms" size="10"> 
-				<input type="submit" value="Submit">
+				<div class="form-group">
+					<input type="text" placeholder="location...e.g. Clapham" name="location" size="30"  required class="form-control">
+					<input type="text" placeholder="No of bedrooms" name="no_bedrooms" size="10" class="form-control"> 
+					<input type="submit" value="Submit" style="font-weight:bolder"class="bookNow ">
+				</div>
 			</form>
 		</div>
 		<div class="results-container">
@@ -139,6 +179,7 @@
 	</div>		
 	<div id="contact-form">
 	 <h2>CONTACT</h2>
+
 		<form class="contact-form" action="/" method="post">
        
         <h4>Fill in the form below, and we'll get back to you within 24 hours.</h4>
