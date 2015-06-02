@@ -91,6 +91,7 @@ function getListings (location,bedroom_max) {
             var errorElem = showError(error);
             $('.search-results').append(errorElem);
              });
+<<<<<<< HEAD
 
 };        
 
@@ -143,3 +144,9 @@ console.log(response);
           console.log(location);   
       */
          
+=======
+
+};        
+
+ 
+>>>>>>> master

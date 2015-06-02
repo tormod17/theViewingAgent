@@ -1,132 +1,154 @@
 
-body  { 	font-family: arial;
-			text-align: center;
 
-	 	}
+body h2 { font-color:purple;}
 
-header { 	font-color:red;
-			height:2em;
-			position: relative;
-			display: block;
-			z-index: 100;
-			width: 100%;
-			clear:both;
-		}	
+#howItWorks,
+#comparison,
+#calculator,
+.results-container{
+  width:90%;
+  margin:0 auto;
+  text-align: center;
+  }
 
-header h1 a { float:left;
-			  margin-left: 1em;
-		
-		}
+#navbarCollapse { padding-right: 2em;
+                   }
+          
+.navbar-default .navbar-nav>li>a { color: purple;
+                                  font-weight:bolder;}
 
-nav    { 		display:block;
-				float:right;
-				position: relative;
-				margin: 1em;
-				margin-left: 20em;
+.navbar-default .navbar-brand { color: purple;
+                                font-weight:bolder;}
+.blue { color: darkblue;}
 
-			
-			} 
+#topWrapper {
+  display: block;
+  height:50em;
+  background-image: url(http://40.media.tumblr.com/089cd5dafe9eeb4ffdf3f73e34323012/tumblr_nimfq02tw41slhhf0o1_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 30% 110%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  clear: both;
+}
 
-nav ul li  { list-style: none;
-		 	overflow: hidden;
-		 	display: inline-block;
-		 	margin-left:1em;
-		 	text-decoration: none;
+#introText {
+  margin: 0 auto;
+  width: 100;
+  padding-top:8em;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  clear: both;
+}
 
-		 	}
-
-a { text-decoration:none;
-	color: purple;
-	font-style: bolder;
-	}
-
-h2  { 	 padding: 2em;
-		 display: block;
-		 position:relative;
-		 color: purple;
-
-	}
-
-h1 {color:blue;
-
-}	
-
-section, footer{ 
-	padding:3em 0 ;
-	text-align: center;}
-
-#nav-wrapper { position: fixed;
-				background-color: white;
-				width: 100%;				
-				}
-
-.bookNow { color: white;
-		   background-color: orange;
-		   margin:1em;
-		   padding: 1em;
-		   border-radius:5px;
-
-		 }	
-
-#introText { margin-top:-2em;
-			 width:20%;
-			 display: block;
-			 position: relative;
-			 text-align: right;
-			 margin-right:1em;
-			 margin-bottom: 2em;
-			 padding:0 2em;
-			 float:right;
-			 clear: both;
-			}
-#topWrapper:target, #introText:target, #howItWorks:target,
-#aboutUs:target, #comparison:target,
-#calculator:target, #contact-form:target { padding-top: 5em;}			
+#introText h4 { font-size:2em;}
 
 
-#topWrapper { 	display: block;
-				height: 30em;
-				background-image:url(http://40.media.tumblr.com/089cd5dafe9eeb4ffdf3f73e34323012/tumblr_nimfq02tw41slhhf0o1_1280.jpg);
-				background-size: cover; 
- 			    background-attachment: fixed;
- 				background-position: 30% 110%;
- 				background-repeat: no-repeat;
-  				-webkit-background-size: cover;
-  				-moz-background-size: cover;
-  				clear:both;
-			}
+.bookNow {
+  background-color:light-grey;
+  color: darkblue;
+  margin: 1em;
+  padding: 0.5em;
+  width: 14em;
+}
 
-#introText {margin:2em;}				
-
-#howItWorks ol { 	text-align: left;
-					margin-left: 30em;
-					display:block;
-				}
-#howItWorks { margin:3em auto;}					
-
-#col1, #col2, #col3 { width:30%;
-					  display: inline-block;}
+.bookNow a {
+  font-size: 1em;
+  color: darkblue;
+  font-weight: bold;
+}
 
 
-.pros { color:green;
-	 }					  
+#howItWorks h2 { 
+  padding-top: 70px;
+  text-align: center;
+  margin:2em;
+  color: purple;
+}
+.onlineAgents img { 
+    width:150px;
+    height:50px;
+    display:block;
+    margin: 1em auto;
+}
 
-.cons { color:red;
-	 }	 
-.pros li, .cons li { list-style: none;}
+.viewingAgent img,
+.arrangeAccess img {
+       width:200px;
+       height:200px;
+       margin: 0 auto;
+       display: block;
+      }
 
-#comparison h3 {	color:purple;
-					vertical-align: top}	
+#aboutUs {
+  padding-top:40px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+#aboutUs h2 { margin: 1em;
+              color:purple;}
 
-table  { 			margin:0 auto;
-				}		
+#comparison h2,
+#calculator h2,
+#contact-form,
+footer{
+  padding-top: 70px; 
+  margin:0 auto;
+  text-align: center;
+  margin:1em;
+  color: purple;
+  }
 
-#calculator { margin:3em;}				
+#comparison ul { list-style: none;}
+#comparison h3 { color: purple;}
 
-/*
+.pros {
+  color: green;
+}
+
+.cons {
+  color: red;
+}
+
+.pros li,
+.cons li {
+  list-style: none;
+}
+.vs { display: block;
+}
+
+#calculator {
+  margin-bottom: 3em;
+}
+#calculator{ width:40%;}
+
+.results {
+  font-size: 1.2em;
+  color: blue;
+  margin: 1em;
+}
+
+.nestoriaLink a {
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.ourPrice {
+  font-size: 2em;
+  color: green;
+}
+
 Title: Creating an HTML5 enhanced responsive-ready contact form, with custom javascript feature detection
 Tutorial on: http://www.onextrapixel.com
 Author: http://www.toddmotto.com
+<<<<<<< HEAD
 */
 .results { font-size: 1.2em;
 			color:blue;
@@ -153,116 +175,319 @@ Author: http://www.toddmotto.com
 .contact-form span { color:purple; 
 						font-size: 1.5em;
 						text-align: left;}
-.contact-form {
-	max-width:80em;
-	width:95%;
-	margin:0 auto;
-	padding-top:5em;
-	position:relative;
-	font:400 12px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color:#444;
+=======
+
+.
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+.contact-form span {
+  color: purple;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+>>>>>>> master
+.contact-form {
+  max-width: 80em;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 5em;
+  position: relative;
+  font: 400 12px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
 .contact-form input[type="url"],
 .contact-form textarea,
 .contact-form button[type="submit"] {
-	font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .contact-form {
-	text-shadow:0 1px 0 #FFF;
-	border-radius:4px;
-	-webkit-border-radius:4px;
-	-moz-border-radius:4px;
-	background:#F9F9F9;
-	padding:25px;
+  text-shadow: 0 1px 0 #FFF;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background: #F9F9F9;
+  padding: 25px;
 }
+
 .contact-form h2 {
-	color:purple;
-	display:block;
-	font-size:3em;
+  color: purple;
+  display: block;
+  font-size: 3em;
 }
+
 .contact-form h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:2em;
-	color: purple;
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 2em;
+  color: purple;
 }
+
 .contact-form label span {
-	cursor:pointer;
-/* color:#991D57; */
-	display:block;
-	margin:5px 0;
-	font-weight:900;
+  cursor: pointer;
+  color:#991D57;
+  
+  display: block;
+  margin: 5px 0;
+  font-weight: 900;
 }
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
 .contact-form input[type="url"],
 .contact-form textarea {
-	width:100%;
-	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	border-radius:5px;
+  width: 100%;
+  box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  -webkit-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  -moz-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
+
 .contact-form input[type="text"]:hover,
 .contact-form input[type="email"]:hover,
 .contact-form input[type="tel"]:hover,
 .contact-form input[type="url"]:hover,
 .contact-form textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA;
 }
+
 .contact-form textarea {
-	height:100px;
-	max-width:100%;
+  height: 100px;
+  max-width: 100%;
 }
+
 .contact-form button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#991D57;
-	background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	border-radius:5px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #991D57;
+  background-image: linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  background-image: -moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  background-image: -webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
+
 .contact-form button[type="submit"]:hover {
-	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
+  background-image: linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+  background-image: -moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+  background-image: -webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
+
 .contact-form button[type="submit"]:active {
-	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 .contact-form input:focus,
 .contact-form textarea:focus {
-	outline:0;
-	border:1px solid #999;
+  outline: 0;
+  border: 1px solid #999;
 }
+
 ::-webkit-input-placeholder {
-    color:#888;
+  color: #888;
 }
+
 :-moz-placeholder {
-    color:#888;
+  color: #888;
 }
+
 ::-moz-placeholder {
-    color:#888;
+  color: #888;
 }
+
 :-ms-input-placeholder {
-    color:#888;
+  color: #888;
+} 
+
+/* body {
+  font-family: arial;
+  text-align: center;
 }
+
+header {
+  font-color: red;
+  position: relative;
+  display: block;
+  z-index: 100;
+  width: 100%;
+  clear: both;
+
+}
+
+header h1 a {
+  float: left;
+  margin-left: 1em;
+  font-size: 22px;
+}
+
+nav {
+  display: block;
+  float: right;
+  position: relative;
+  margin: 1em;
+  margin-left: 20em;
+}
+
+nav ul li {
+  list-style: none;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+  font-style: bolder;
+  font-size: 12px;
+}
+
+h2 {
+  padding: 2em;
+  display: block;
+  position: relative;
+  color: purple;
+}
+
+h1 {
+  color: blue;
+}
+
+section,
+footer {
+  padding: 3em 0;
+  text-align: center;
+}
+
+#nav-wrapper {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+.bookNow {
+  color: white;
+  background-color: orange;
+  margin: 1em;
+  padding: 0.5em;
+  width: 14em;
+}
+
+.bookNow a {
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+#introText {
+  margin: 0 auto;
+  width: 100;
+  padding-top:8em;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  clear: both;
+}
+
+#topWrapper:target,
+#introText:target,
+#howItWorks:target,
+#aboutUs:target,
+#comparison:target,
+#calculator:target,
+#contact-form:target {
+  padding-top: 5em;
+}
+
+#topWrapper {
+  display: block;
+  height: 40em;
+  background-image: url(http://40.media.tumblr.com/089cd5dafe9eeb4ffdf3f73e34323012/tumblr_nimfq02tw41slhhf0o1_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 30% 110%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  clear: both;
+}
+
+#introText {
+  margin: 2em;
+}
+
+#howItWorks {
+  list-style: list;
+  margin: 3em auto;
+  font-size: 1.25em;
+}
+
+#howItWorks span {
+  background-image: url(http://i1378.photobucket.com/albums/ah112/Tormod_Smith/search-241_zpsnqqgsysx.png);
+}
+
+
+#col1,
+#col2,
+#col3 {
+  width: 30%;
+  display: inline-block;
+}
+
+.pros {
+  color: green;
+}
+
+.cons {
+  color: red;
+}
+
+.pros li,
+.cons li {
+  list-style: none;
+}
+
+#comparison h3 {
+  color: purple;
+  vertical-align: top
+}
+
+table {
+  margin: 0 auto;
+}
+
+
