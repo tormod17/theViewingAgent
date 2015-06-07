@@ -10,6 +10,8 @@
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
@@ -69,7 +71,7 @@
 				<div class="col-md-3 col-lg-4 onlineAgents">
 					<div class='thumbnail'>
 					
-						<h1>1.Choose an online agent </h1>
+						<h1>1. Choose an online agent </h1>
 						<img src="images/easyProperty.png">
 						<img src="images/tepilo.jpg">
 						<img src="images/emoov_logo.gif">
@@ -78,7 +80,7 @@
 				</div>
 				<div class="col-md-3 col-lg-4 viewingAgent">
 					<div class='thumbnail'>
-						<h1>2.Book the Viewing Agent</h1>
+						<h1>2. Book the Viewing Agent</h1>
 						<img src="images/Bond.jpg" class="img-circle" alt="Circular Image">
 					
 						<button class='bookNow'><a href="#contact-form">Learn More</a></button>
@@ -86,8 +88,8 @@
 				</div>
 				<div class="col-md-3 col-lg-4 arrangeAccess">
 					<div class='thumbnail'>
-							<h1>3.Arrange access and wait for your offer</h1>
-							<img src="images/Key.png" img>
+							<h1>3. Arrange access and wait for your offer</h1>
+							<img src="images/key.png">
 
 						<button class='bookNow'><a href="#contact-form">Learn More</a></button>
 					</div>	
@@ -104,14 +106,14 @@
 		<h2> WHY US</h2>
 			<div class="row">
 				<div class="col-md-4">
-					<div class='thumbnail'>
+					<div class='thumbnail whyUs'>
 						<h3>HIGHT STREET  </h3>
-							<ul class='pros'>
+							<ul class='list-group pros'>
 									<li>hosted viewings</li>
 									<li>local expert knowledge</li>
 									<li>access to registered buyers</li>
 							</ul>
-							<ul  class='cons'>
+							<ul  class='list-group cons'>
 									<li>Expensive Commission</li>
 									<li>High tenant admin fees</li>
 									<li>Pressurised sales staff</li>
@@ -122,14 +124,14 @@
 			
 
 				<div class="col-md-4 ">
-					<div class='thumbnail'>
+					<div class='thumbnail whyUs'>
 						<h3>ONLINE </h3>
-							<ul class='pros'>
+							<ul class='list-group pros'>
 								<li>low cost , massive savings</li>
-								<li>No interferring agent</li>
+								<li>full control over services</li>
 								<li>pick and choose services</li>
 							</ul>
-							<ul class='cons'>
+							<ul class='list-group cons'>
 								<li>No hosted viewings</li>
 								<li>No local knowledge</li>
 								<li>No registered tenant database</li>
@@ -139,16 +141,15 @@
 				
 
 				<div class="col-md-4">
-					<div class='thumbnail'>
+					<div class='thumbnail whyUs'>
 						<h3>VIEWING AGENT</h3>
-						<ul class='pros'>
+						<ul class='list-group pros'>
 							<li>low cost , massive savings</li>
 							<li>hosted viewings</li>
 							<li>local expert knowledge</li>
 							<li>Access to registered tenants and buyer database</li>
 							<li>Weekend and evening vieiwngs</li>
-							<li></li>
-							<li></li>
+							
 						</ul>
 					</div>
 				</div>
@@ -162,59 +163,68 @@
 			<form class="lettingsProperty" onsubmit="return false;">
 				<div class="form-group">
 					<input type="text" placeholder="location...e.g. Clapham" name="location" size="30"  required class="form-control">
-					<input type="text" placeholder="No of bedrooms" name="no_bedrooms" size="10" class="form-control"> 
+					<input type="text" placeholder="Number of bedrooms...studio = 0" name="no_bedrooms" size="10" class="form-control"> 
 					<input type="submit" value="Submit" style="font-weight:bolder"class="bookNow ">
 				</div>
 			</form>
 		</div>
-		<div class="results-container">
-			<div class='nestoriaLink'></div>
-		<!-- 	<div class='templates hidden'></div> -->
-					<div class="results"></div>
-					<div class="ourPrice"></div>
-			</div>
+	</div>		
+		
+		<div id="results-container">
+		 
+			 	<div class="row">
+					<div class= "col-md-4 thumbnail">
+						<h4 class='tableHeadings'>The average property price</h4>
+						<div class=' results'></div>
+						
+					</div>
+					<div class= "col-md-4 thumbnail">
+						<h4 class='tableHeadings'>The average High Street Agent Commission</h4>
+						<div class="hsAgentComm "></div>
+					</div>
+					<div class= "col-md-4 thumbnail">
+						<h4 class='tableHeadings'>The Viewing Agent cost </h4>
+						<div class="ourPrice "></div>
+					</div>
+					
+				</div>
 
+		 	<div class="nestoriaLink"></div>
 			
 		</div>
-	</div>		
+		
 	<div id="contact-form">
 	 <h2>CONTACT</h2>
 
-		<form class="contact-form" action="/" method="post">
+	<form class="contact-form form-horizontal whyUs" action="/" method="post">
        
         <h4>Fill in the form below, and we'll get back to you within 24 hours.</h4>
-        <div>
-                <label>
-                        <span>Name: (required)</span>
-                        <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
-                </label>
+        <div class="form-group">
+          	  <label for="inputEmail" class="control-label col-xs-2"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email :(required)</label>
+        	<div class="col-xs-9">
+          	  <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+            </div>
         </div>
-        <div>
-                <label>
-                        <span>Email: (required)</span>
-                        <input placeholder="Please enter your email address" type="email" tabindex="2" required>
-                </label>
+         <div class="form-group">
+          		 <label for="telephoneNumber" class="control-label col-xs-2"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Telephone: (required)</label>
+        	<div class="col-xs-9">
+         	   <input type="telephone" class="form-control" id="telephone" placeholder="telephone number please" required>
+            </div>
         </div>
+        <div class="form-group">
+				<label for="viewingTime" class="control-label col-xs-2"><span class="glyphicon glyphicon-calendar"></span>
+        		Viewing Time: (required)</label>
+       		<div class="col-xs-9">
+            	<input type="text" class="form-control" id="viewingTime" placeholder="Please enter the time and date of the viewing you require" required>
+        	</div>
+		</div>
+		<div class="form-group">
+		  	  <label for="message"class="control-label col-xs-2" ><span class="glyphicon glyphicon-comment"></span> Message:(required)</label>
+        	<div class="col-xs-9">
+           		 <textarea class="form-control" placeholder="Include all the details you can" tabindex="5" required></textarea>
+      		</div>
         <div>
-                <label>
-                        <span>Telephone: (required)</span>
-                        <input placeholder="Please enter your number" type="tel" tabindex="3" required>
-                </label>
-        </div>
-        <div>
-                <label>
-                        <span>Viewing time and date: (required)</span>
-                        <input placeholder=" Please enter the time and date" type="text" tabindex="4" required>
-                </label>
-        </div>
-        <div>
-                <label>
-                        <span>Message: (required)</span>
-                        <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
-                </label>
-        </div>
-        <div>
-                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+            <button name="submit" type="submit" id="contact-submit" class="bookNow">Send Email</button>
         </div>
 	</form>
 	</div>

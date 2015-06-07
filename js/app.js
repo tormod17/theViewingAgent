@@ -9,6 +9,11 @@ var listings;
 
     $('.lettingsProperty').submit( function(event){
         $('.results').html('');
+        $('.hsAgentComm').html('');
+        $('.ourPrice').html('');
+        $('.nestoriaLink').html('');
+
+        
         event.preventDefault();
 
           var location = $(this).find("input[name='location']").val();
@@ -80,8 +85,9 @@ function getListings (location,bedroom_max) {
 
                   })     
 
-            $('.nestoriaLink').append('<p>' + '<a href =' + nestoriaLink+ '>' +'Click here to see comparable properties</a></p>');
-            $('.results').append('<p>  Number of bedrooms:' + ' ' + bedroom_max +' '+ 'Average weekley rent: £' + averagePrice +' ' + 'Average agent commisson :' +' ' + '£'+ averageComm  +' </p>');
+            $('.nestoriaLink').append('<p>' + '<a href =' + nestoriaLink+ '>' +'Click here to see the full list of properties in the selected area.</a></p>');
+            $('.results').append('<p>  Number of bedrooms:' + ' ' + bedroom_max +' '+ 'Average weekley rent: £' + averagePrice );
+            $('.hsAgentComm').append('<p> Average agent commisson :' +' ' + '£'+ averageComm  +' </p>');
             $('.ourPrice').append('<p> The viewing agent will cost you £400 </p>');
                   console.log(parseInt(averagePrice));
                   console.log(parseInt(averageComm));        
@@ -92,6 +98,10 @@ function getListings (location,bedroom_max) {
             $('.search-results').append(errorElem);
              });
 
+
 };        
+
+ 
+
 
  
