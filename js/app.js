@@ -21,7 +21,26 @@ var listings;
           getListings(location, bedroom_max);
           
     });
+
+    $('.vaBtn').click(function(){
+      $("#vaModal").modal('show');
+
+    });
+
+     $('.olBtn').click(function(){
+      $("#olModal").modal('show');
+
+    });
+
+     $('.aaBtn').click(function(){
+      $("#aaModal").modal('show');
+
+    });
+
+
 });      
+
+
     
 function getListings (location,bedroom_max) { 
             

@@ -145,6 +145,7 @@ footer{
   font-size: 1.3em;
   text-transform: lowercase;
   font-style: italic;
+  list-style-type: none;
 }
 
 .thumbnail, .whyUs { background-color: #E0E6F8;
