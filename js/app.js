@@ -21,7 +21,26 @@ var listings;
           getListings(location, bedroom_max);
           
     });
+
+    $('.vaBtn').click(function(){
+      $("#vaModal").modal('show');
+
+    });
+
+     $('.olBtn').click(function(){
+      $("#olModal").modal('show');
+
+    });
+
+     $('.aaBtn').click(function(){
+      $("#aaModal").modal('show');
+
+    });
+
+
 });      
+
+
     
 function getListings (location,bedroom_max) { 
             
@@ -60,8 +79,8 @@ function getListings (location,bedroom_max) {
            
 
             .done(function(response){
-             var nestoriaLink= response.response.link_to_url;
-                 console.log(nestoriaLink)
+                var nestoriaLink= response.response.link_to_url;
+                console.log('>>>>>>>>>>>>',nestoriaLink, response)
     
                 var listings = response.response.listings;
                 var No_of_listings = listings.length;
