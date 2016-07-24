@@ -49,30 +49,16 @@ function getListings (location,bedroom_max) {
               country: "uk",  
               language : "en",  
               listing_type : "rent", 
-              location : location,
-              num_res: "1",  
-              offset : 0,  
-              output : "json_xs",  
-              page : 1,  
-              pretty : "1",  
-              product_type : "realestate", 
-              property_type : "property",  
-              size_type : "gross",  
-              size_unit : "m2",  
-              sort : "nestoria_rank",  
-              action:"search_listings",
-              encoding: "json",
-              bedroom_max: bedroom_max,
-              bedroom_min: bedroom_max,
-              number_of_results:50,
+              area_type: location,            
+              page_size:5
 
             } 
 
             var response = $.ajax({
             
-            url: "http://api.nestoria.co.uk/api?",
+            url: "http://api.zoopla.co.uk/api/v1/average_sold_price",
             data: request,
-            dataType: "jsonp",
+            dataType: "json",
             type: "GET",
             
             })
