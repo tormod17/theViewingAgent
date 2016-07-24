@@ -59,7 +59,7 @@ function getListings (location,bedroom_max) {
             
             url: "http://api.zoopla.co.uk/api/v1/average_sold_price",
             data: request,
-            dataType: "jsonp",
+            dataType: "json",
             type: "GET",
             
             })
