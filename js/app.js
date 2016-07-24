@@ -45,15 +45,13 @@ var listings;
 function getListings (location,bedroom_max) { 
             
             var request = {  
-              area_type: location,            
-              page_size:5,
+              area: location,            
               api_key: 'aejnbvt9axw4b5upkb2ccwnk'
-
             } 
 
             var response = $.ajax({
             
-            url: "http://api.zoopla.co.uk/api/v1/average_sold_prices.json",
+            url: "http://api.zoopla.co.uk/api/v1/property_listings.json",
             data: request,
             dataType: "json",
             type: "GET",
