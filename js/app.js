@@ -47,7 +47,8 @@ function getListings(location, bedroom_max) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            document.getElementById("demo").innerHTML = xhttp.responseText;
+          var response = xhttp.responseText;
+          console.log(response);
         }
     };
     xhttp.open("GET", " http://api.zoopla.co.uk/api/v1/property_listings.json?area=putney&api_key=aejnbvt9axw4b5upkb2ccwnk", true);
