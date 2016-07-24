@@ -50,7 +50,8 @@ function getListings (location,bedroom_max) {
               language : "en",  
               listing_type : "rent", 
               area_type: location,            
-              page_size:5
+              page_size:5,
+              api_key: 'aejnbvt9axw4b5upkb2ccwnk'
 
             } 
 
@@ -58,7 +59,7 @@ function getListings (location,bedroom_max) {
             
             url: "http://api.zoopla.co.uk/api/v1/average_sold_price",
             data: request,
-            dataType: "json",
+            dataType: "jsonp",
             type: "GET",
             
             })
