@@ -53,7 +53,7 @@ function getListings (location,bedroom_max) {
             
             url: "http://api.zoopla.co.uk/api/v1/property_listings.json",
             data: request,
-            dataType: "json",
+            dataType: "jsonp",
             type: "GET",
             
             })
