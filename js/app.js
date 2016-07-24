@@ -61,7 +61,7 @@ function getListings (location,bedroom_max) {
 
             .done(function(response){
              var nestoriaLink= response.response.link_to_url;
-                 console.log(nestoriaLink)
+                 console.log('>>>>>>>>>>>>',nestoriaLink, response)
     
                 var listings = response.response.listings;
                 var No_of_listings = listings.length;
