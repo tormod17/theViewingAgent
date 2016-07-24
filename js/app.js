@@ -99,8 +99,7 @@ function getListings (location,bedroom_max) {
                             agentComm = parseInt((listingPrice * 52) * 0.07);
                             totalComm += agentComm;
                             averageComm = parseInt(totalComm / No_of_listings);
-                            averagePrice =parseInt(totalPrice /No_of_listings);
-                        
+                            averagePrice =parseInt(totalPrice /No_of_listings);                      
 
                   })     
 
